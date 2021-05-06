@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 1s;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#code{
+  height: 50vh;
+  overflow: hidden;
+}
+.preview{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.token.comment{
+  color: black;
+}
+.token.selector{
+  color: black;
+}
+.token.punctuation{
+  color: black;
+}
+.token.property{
+  color: black;
+}
+.Garfield {
+  position: relative;
+  width: 370px;
+  height: 310px;
+}
+.mustache-r1, .mustache-r2, .mustache-r3, .mustache-r4, .mustache-l1, .mustache-l2, .mustache-l3, .mustache-l4{
+  display: flex;
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+.noseMustache-left > div {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  bottom: 0;
+  right: 0;
+}
+.noseMustache-right > div {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  top: 0;
+  right: 0;
+}
+.noseMustache-left{
+  top: 232px;
+  left: 36%;
+}
+.noseMustache-right{
+  top: 220px;
+  left: 50%;
+  transform: rotate(-140deg);
+}
+.leftCheek {
+  top: 178px;
+  left: 27%;
+  transform: rotate(-35deg);
+}
+.rightCheek {
+  top: 131px;
+  left: 54%;
+  transform: rotate(215deg);
+}
+.actions{
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.actions>button{
+  color: white;
+  margin: 8px;
+  padding: 8px 10px;
+  border: 2px solid #C5C8D4;
+  background: black;
+  transition: all 0.5s;
+}
+.actions>button:hover{
+  color: black;
+  background: white;
+  border: 2px solid black;
+}
+.actions>button:focus{
+  outline: 1px solid white;
+}
